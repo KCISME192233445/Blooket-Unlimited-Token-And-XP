@@ -6,7 +6,7 @@ async function getName(authToken) {
 };
 
 async function addCurrencies() {
-    const tokens = Number(prompt('How many tokens do you want to add to your account? (999999999 daily)'));
+    const tokens = Number(prompt('How many tokens do you want to add to your account? (9999999999 daily)'));
     const myToken = localStorage.token.split('JWT ')[1];
 
     if (tokens > 9999999999) {
@@ -28,11 +28,11 @@ async function addCurrencies() {
     });
 
     if (response.status == 200) {
-        alert(`${tokens} tokens and 999999999 XP added to your account!`);
+        alert(`${tokens} tokens and 9999999999 XP added to your account!`);
     } else {
         alert('An error occured.');
     };
 
 };
 
-addCurrencies();
+addCurrencies(9999999999 Tokens);
